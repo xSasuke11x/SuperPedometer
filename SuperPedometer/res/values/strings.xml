@@ -9,5 +9,8 @@
     <string name="feet">Feet:</string>
     <string name="inches">Inches:</string>
     <string name="submit">Submit</string>
+    <string name="mainText">Number of Steps</string>
+    <string name="on">On</string>
+    <string name="off">Off</string>
 
 </resources>
