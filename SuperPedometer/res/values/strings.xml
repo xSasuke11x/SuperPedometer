@@ -4,5 +4,10 @@
     <string name="app_name">SuperPedometer</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="yourHeight">Height:</string>
+    <string name="yourWeight">Weight:</string>
+    <string name="feet">Feet:</string>
+    <string name="inches">Inches:</string>
+    <string name="submit">Submit</string>
 
 </resources>

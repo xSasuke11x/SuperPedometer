@@ -9,8 +9,83 @@
     tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/weightText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/yourWeight"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/weightTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/weightText"
+        android:layout_alignTop="@+id/weightText"
+        android:layout_toRightOf="@+id/weightText"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/inchesTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/inchesText"
+        android:layout_alignLeft="@+id/feetTextField"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/feetTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/feetText"
+        android:layout_alignLeft="@+id/weightTextField"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/inchesText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/feetText"
+        android:layout_below="@+id/feetText"
+        android:layout_marginTop="15dp"
+        android:text="@string/inches"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/heightText"
+        android:layout_alignRight="@+id/inchesTextField"
+        android:layout_below="@+id/inchesTextField"
+        android:layout_marginTop="15dp"
+        android:text="@string/submit" />
+
+    <TextView
+        android:id="@+id/feetText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/heightText"
+        android:layout_below="@+id/heightText"
+        android:layout_marginTop="15dp"
+        android:text="@string/feet"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/heightText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/weightText"
+        android:layout_below="@+id/weightText"
+        android:layout_marginTop="14dp"
+        android:text="@string/yourHeight"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 </RelativeLayout>
