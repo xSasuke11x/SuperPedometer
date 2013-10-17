@@ -33,7 +33,7 @@ public final class R {
         public static final int inchesTextField=0x7f080002;
         public static final int steps=0x7f080008;
         public static final int submit=0x7f080006;
-        public static final int toggleOff=0x7f08000a;
+        public static final int toggleButton=0x7f08000a;
         public static final int weightText=0x7f080000;
         public static final int weightTextField=0x7f080001;
     }
@@ -47,6 +47,7 @@ public final class R {
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
+        public static final int btn_display=0x7f05000b;
         public static final int feet=0x7f050005;
         public static final int hello_world=0x7f050002;
         public static final int inches=0x7f050006;

@@ -12,5 +12,6 @@
     <string name="mainText">Number of Steps</string>
     <string name="on">On</string>
     <string name="off">Off</string>
+    <string name="btn_display">Display</string>
 
 </resources>

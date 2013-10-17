@@ -66,7 +66,8 @@
         android:layout_alignRight="@+id/inchesTextField"
         android:layout_below="@+id/inchesTextField"
         android:layout_marginTop="15dp"
-        android:text="@string/submit" />
+        android:text="@string/submit"
+        android:onClick="submitClicked" />
 
     <TextView
         android:id="@+id/feetText"
