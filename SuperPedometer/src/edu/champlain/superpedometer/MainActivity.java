@@ -2,12 +2,18 @@ package edu.champlain.superpedometer;
 
 import android.os.Bundle;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.view.Menu;
+import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
+import android.content.Intent;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 
 public class MainActivity extends Activity {
@@ -24,7 +30,21 @@ public class MainActivity extends Activity {
             toggle.setChecked(false);
         }
         toggle.setOnCheckedChangeListener(listener);
-    }
+        
+        Button b1 = (Button) findViewById(R.id.submit);
+
+        // Setup the listeners for the buttons, and the button handler      
+        b1.setOnClickListener(buttonhandler);
+    }        
+    
+    View.OnClickListener buttonhandler = new View.OnClickListener() { 
+
+    	// Now I need to determine which button was clicked, and which intent or activity to launch.         
+    	public void onClick(View v) {
+    		Intent myIntent1 = new Intent(MainActivity.this, Pedometer.class);
+    		MainActivity.this.startActivity(myIntent1);
+    	} 
+    };
     
     OnCheckedChangeListener listener = new OnCheckedChangeListener() {
         public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {

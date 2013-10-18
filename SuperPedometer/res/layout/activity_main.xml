@@ -67,7 +67,7 @@
         android:layout_below="@+id/inchesTextField"
         android:layout_marginTop="15dp"
         android:text="@string/submit"
-        android:onClick="submitClicked" />
+        android:onClick="onClick" />
 
     <TextView
         android:id="@+id/feetText"
